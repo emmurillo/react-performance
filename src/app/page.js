@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import image from './optimized_image.webp'
 
 export default function Home() {
   return (
     <main className={styles.main}>
 
-      <img src="https://images.pexels.com/photos/16361792/pexels-photo-16361792/free-photo-of-seagull-on-beach.jpeg" width={1000} height={500} alt="" />
-
+      <Image src={image} alt="" width={1000} height={500} priority />
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
