@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+let nextConfig = {
   compress: false,
   optimizeFonts: false,
   webpack(webpackConfig) {
@@ -11,5 +12,10 @@ const nextConfig = {
     };
   }
 }
+
+const withNextBundleAnalyzer =
+  require('next-bundle-analyzer')(/* options come there */);
+nextConfig = withNextBundleAnalyzer(nextConfig);
+
 
 module.exports = nextConfig
