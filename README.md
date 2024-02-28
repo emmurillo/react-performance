@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Requirements
+### Dev
+- Node 18.19.1 (18.17 or higher should be enough)
+- run `npm i`
+- run `npm run dev`
+
+### Build only with Docker
+- run `docker build -t react-performance .`
+- run `docker run -p 3000:3000 react-performance`
+
 
 ## Getting Started
 
