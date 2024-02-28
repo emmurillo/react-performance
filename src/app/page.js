@@ -1,7 +1,26 @@
+"use client"
+
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
+  const [data, setData] = useState(null)
+  const [isLoading, setLoading] = useState(true)
+ 
+  useEffect(() => {
+    fetch('/api/data')
+      .then((res) => res.json())
+      .then(({data}) => {
+        setData(data)
+        setLoading(false)
+      })
+  }, [])
+ 
+  if (isLoading) return <p>Loading...</p>
+  if (!data) return <p>No data</p>
+
+
   return (
     <main className={styles.main}>
 
@@ -41,6 +60,10 @@ export default function Home() {
           priority
         />
       </div>
+
+      <p>
+        {data.map(({name}) => (<span> - {name}</span>))}
+      </p>
 
       <div className={styles.grid}>
         <a
