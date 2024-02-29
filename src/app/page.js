@@ -20,6 +20,7 @@ export default function Home() {
   if (isLoading) return <p>Loading...</p>
   if (!data) return <p>No data</p>
 
+
   return (
     <main className={styles.main}>
 
