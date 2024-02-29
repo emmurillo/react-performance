@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-
-let nextConfig = {
+const nextConfig = {
+  output: 'standalone',
   compress: false,
   optimizeFonts: false,
   webpack(webpackConfig) {
