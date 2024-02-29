@@ -20,11 +20,10 @@ export default function Home() {
   if (isLoading) return <p>Loading...</p>
   if (!data) return <p>No data</p>
 
-
   return (
     <main className={styles.main}>
 
-      <img src="/sample_image.jpg" width={1000} height={500} alt="" />
+      <Image src="/sample_image.webp" width={1000} height={500} alt="" priority loading='eager' />
 
       <div className={styles.description}>
         <p>
