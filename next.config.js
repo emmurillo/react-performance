@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+let nextConfig = {
   output: 'standalone',
   compress: false,
   optimizeFonts: false,
