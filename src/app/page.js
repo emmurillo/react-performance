@@ -22,7 +22,6 @@ export default function Home() {
 
   return (
     <main>
-      <Image src="/sample_image.webp" width={1000} height={500} alt="" priority loading='eager' />
       <p>
         {data.map(({ name }) => (<span> - {name}</span>))}
       </p>
