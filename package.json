@@ -10,7 +10,8 @@
     "partytown": "partytown copylib public/~partytown"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^14.0.2",
+    "@builder.io/partytown": "^0.8.1",
+    "@next/bundle-analyzer": "^14.1.1",
     "next": "^14.1.0",
     "react": "latest",
     "react-dom": "latest",

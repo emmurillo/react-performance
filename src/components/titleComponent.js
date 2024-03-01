@@ -4,7 +4,7 @@ const TitleComponent = ({ title = '' }) => {
     return (
         <>
             <a href="/">Home</a>
-            <h1 style={{ color: "white" }}>{title}</h1>
+            <h1 style={{ color: "black" }}>{title}</h1>
         </>
     );
 };

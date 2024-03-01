@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-// import styles from './page.module.css'
 
 export default function Home() {
   const [data, setData] = useState(null)
@@ -23,7 +22,6 @@ export default function Home() {
 
   return (
     <main>
-      <Image src="/sample_image.webp" width={1000} height={500} alt="" priority loading='eager' />
       <p>
         {data.map(({ name }) => (<span> - {name}</span>))}
       </p>
