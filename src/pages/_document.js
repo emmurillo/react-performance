@@ -23,6 +23,7 @@ class MyDocument extends Document {
           <Script id="random-elements" strategy="worker">
             {randomElements()}
           </Script>
+          
         </Head>
         <body>
           <noscript
